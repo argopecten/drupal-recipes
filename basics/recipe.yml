@@ -1,0 +1,47 @@
+# Drupal 11 recipe to install core modules on top of minimal profile.
+name: 'basics'
+description: 'Installs essential core modules for Drupal 11'
+type: 'site'
+
+# Code modules to install
+install:
+  # field types
+  - datetime
+  - file
+  - image
+  - link
+  - options
+  # core modules with no module dependencies
+  - automated_cron
+  - big_pipe
+  - block_content
+  - breakpoint
+  - config
+  - contextual
+  - editor
+  - field_ui
+  - layout_discovery
+  - media
+  - menu_link_content
+  - path
+  - syslog
+  - views
+  # core modules with dependencies on other modules
+  - ckeditor5
+  - layout_builder
+  - media_library
+  - menu_ui
+  - responsive_image
+  - views_ui
+
+# Configuration actions
+config:
+  import:
+    # Import default configurations from core modules
+    media_library: '*'
+    block_content: '*'
+    media: '*'
+    image: '*'
+    node: '*'
+    file: '*'
+    # user: '*'

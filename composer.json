@@ -1,0 +1,16 @@
+{
+    "name": "argopecten/recipe-basics",
+    "description": "Add core modules to the minimal profile",
+    "keywords": ["recipe", "Drupal recipes", "drupal recipe"],
+    "type": "drupal-recipe",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "argopecten.hu",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+
+    }
+}
